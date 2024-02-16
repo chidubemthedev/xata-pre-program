@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import user_router
+from routers import user_router, pdf_router
 
 app = FastAPI()
 
@@ -9,3 +9,4 @@ user = {
 }
     
 app.include_router(user_router)
+app.include_router(pdf_router)
